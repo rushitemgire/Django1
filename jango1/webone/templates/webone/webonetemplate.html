@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebOne</title>
+    </head>
+    <body>
+        {% for weboneobj in object_list %}
+        <div align="center">
+            <img src="{{weboneobj.collcover}}" height="200" height="200">
+            <h2><a href="/webone/{{weboneobj.id}}/">{{weboneobj.collection_name}}</a></h2>
+            <h3>{{weboneobj.description}}</h3>
+            <br/>
+        </div>
+        {% endfor %}
+    </body>
+</html>
